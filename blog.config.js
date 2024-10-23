@@ -255,7 +255,7 @@ const BLOG = {
   MOUSE_FOLLOW: process.env.NEXT_PUBLIC_MOUSE_FOLLOW || true, // 开关
   // 这两个只有在鼠标跟随特效开启时才生效
   // 鼠标类型 1：路劲散点 2：下降散点 3：上升散点 4：边缘向鼠标移动散点 5：跟踪转圈散点 6：路径线条 7：聚集散点 8：聚集网格 9：移动网格 10：上升粒子 11：转圈随机颜色粒子 12：圆锥放射跟随蓝色粒子
-  MOUSE_FOLLOW_EFFECT_TYPE: 6, // 1-12
+  MOUSE_FOLLOW_EFFECT_TYPE: 11, // 1-12
   MOUSE_FOLLOW_EFFECT_COLOR: '#ef672a', // 鼠标点击特效颜色 #xxxxxx 或者 rgba(r,g,b,a)
 
   // 樱花飘落特效
@@ -306,7 +306,7 @@ const BLOG = {
   MUSIC_PLAYER_CDN_URL:
     process.env.NEXT_PUBLIC_MUSIC_PLAYER_CDN_URL ||
     'https://lf9-cdn-tos.bytecdntp.com/cdn/expire-1-M/aplayer/1.10.1/APlayer.min.js',
-  MUSIC_PLAYER_ORDER: process.env.NEXT_PUBLIC_MUSIC_PLAYER_ORDER || 'list', // 默认播放方式，顺序 list，随机 random
+  MUSIC_PLAYER_ORDER: process.env.NEXT_PUBLIC_MUSIC_PLAYER_ORDER || 'random', // 默认播放方式，顺序 list，随机 random
   MUSIC_PLAYER_AUDIO_LIST: [
     // 示例音乐列表。除了以下配置外，还可配置歌词，具体配置项看此文档 https://aplayer.js.org/#/zh-Hans/
     {
@@ -327,8 +327,8 @@ const BLOG = {
   MUSIC_PLAYER_METING: process.env.NEXT_PUBLIC_MUSIC_PLAYER_METING || true, // 是否要开启 MetingJS，从平台获取歌单。会覆盖自定义的 MUSIC_PLAYER_AUDIO_LIST，更多配置信息：https://github.com/metowolf/MetingJS
   MUSIC_PLAYER_METING_SERVER:
     process.env.NEXT_PUBLIC_MUSIC_PLAYER_METING_SERVER || 'netease', // 音乐平台，[netease, tencent, kugou, xiami, baidu]
-  MUSIC_PLAYER_METING_ID:
-    process.env.NEXT_PUBLIC_MUSIC_PLAYER_METING_ID || '6815445130', // 对应歌单的 id
+  MUSIC_PLAYER_METING_ID://music.163.com/playlist?id=6815445130&uct2=U2FsdGVkX18Dm9b+CrZH031W4ZoVWURJEJPoJx4m62I=
+    process.env.NEXT_PUBLIC_MUSIC_PLAYER_METING_ID || '681544', // 对应歌单的 id
   MUSIC_PLAYER_METING_LRC_TYPE:
     process.env.NEXT_PUBLIC_MUSIC_PLAYER_METING_LRC_TYPE || '1', // 可选值： 3 | 1 | 0（0：禁用 lrc 歌词，1：lrc 格式的字符串，3：lrc 文件 url）
 
