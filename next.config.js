@@ -225,19 +225,10 @@ const nextConfig = {
   publicRuntimeConfig: {
     // 这里的配置既可以服务端获取到，也可以在浏览器端获取到
     THEMES: themes
+  },
+  images: {
+    formats: ['image/avif']
   }
 }
 
 module.exports = withBundleAnalyzer(nextConfig)
-
-// module.exports = {
-//   images: {
-//     unoptimized: true
-//   }
-// }
-
-module.exports = {
-  images: {
-    formats: ['image/avif', 'image/webp']
-  }
-}
