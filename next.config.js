@@ -96,7 +96,7 @@ const nextConfig = {
       },
   images: {
     // 图片压缩
-    formats: ['image/avif'],
+    formats: ['image/avif', 'image/webp'],
     // 允许next/image加载的图片 域名
     domains: [
       'gravatar.com',
@@ -107,7 +107,8 @@ const nextConfig = {
       'p1.qhimg.com',
       'webmention.io',
       'ko-fi.com'
-    ]
+    ],
+    unoptimized: true
   },
 
   // 默认将feed重定向至 /public/rss/feed.xml
@@ -225,9 +226,6 @@ const nextConfig = {
   publicRuntimeConfig: {
     // 这里的配置既可以服务端获取到，也可以在浏览器端获取到
     THEMES: themes
-  },
-  images: {
-    formats: ['image/avif']
   }
 }
 
