@@ -96,7 +96,7 @@ const nextConfig = {
       },
   images: {
     // 图片压缩
-    formats: ['image/avif', 'image/webp'],
+    formats: ['image/avif'],
     // 允许next/image加载的图片 域名
     domains: [
       'gravatar.com',
