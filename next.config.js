@@ -235,3 +235,9 @@ module.exports = withBundleAnalyzer(nextConfig)
 //     unoptimized: true
 //   }
 // }
+
+module.exports = {
+  images: {
+    formats: ['image/avif', 'image/webp']
+  }
+}
