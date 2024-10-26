@@ -165,11 +165,15 @@ const nextConfig = {
         }
 
         return [
-          ...langsRewrites,
-          // 伪静态重写
+          //   ...langsRewrites,
+          //   // 伪静态重写
+          //   {
+          //     source: '/:path*.html',
+          //     destination: '/:path*'
+          //   }
           {
-            source: '/:path*.html',
-            destination: '/:path*'
+            source: '/notion-image/:path*',
+            destination: 'https://www.notion.so/image/:path*'
           }
         ]
       },
