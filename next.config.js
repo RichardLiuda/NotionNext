@@ -107,8 +107,7 @@ const nextConfig = {
       'source.unsplash.com',
       'p1.qhimg.com',
       'webmention.io',
-      'ko-fi.com',
-      's3.us-west-2.amazonaws.com'
+      'ko-fi.com'
     ]
     // unoptimized: true
   },
