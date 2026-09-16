@@ -20,7 +20,7 @@ export default function Modal(props) {
     modalContent?.pageCover || siteInfo?.pageCover,
     1200,
     85,
-    'avif'
+    'webp'
   )
   const imgRef = useRef(null)
 
@@ -97,9 +97,7 @@ export default function Modal(props) {
                 {/* <div
                   className={`bg-hexo-black-gray w-32 h-32 flex justify-center items-center `}> */}
                 <div
-                  className={`absolute right-0 bottom-0 m-4 ${
-                    loading ? '' : 'hidden'
-                  }`}>
+                  className={`absolute right-0 bottom-0 m-4 ${loading ? '' : 'hidden'}`}>
                   <ArrowPath
                     className={`w-10 h-10 animate-spin text-gray-200`}
                   />
