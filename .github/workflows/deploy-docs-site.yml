@@ -24,6 +24,7 @@ concurrency:
 
 jobs:
   deploy:
+    if: ${{ !github.event.repository.fork }}
     runs-on: ubuntu-latest
     permissions:
       contents: read
